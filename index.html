@@ -16,9 +16,10 @@
 
     function onLoad() {
       var parsedUrl = new URL(window.location.toString());
-      document.write('Title shared: ' + parsedUrl.searchParams.get('name'));
-      document.write('Text shared: ' + parsedUrl.searchParams.get('description'));
-      document.write('URL shared: ' + parsedUrl.searchParams.get('link'));
+        let i = document.querySelector("body");
+      i.innerHTML+='Title shared: ' + parsedUrl.searchParams.get('name'));
+      i.innerHTML+='Text shared: ' + parsedUrl.searchParams.get('description'));
+      i.innerHTML+='URL shared: ' + parsedUrl.searchParams.get('link'));
     }
 
     window.addEventListener('load', onLoad);
