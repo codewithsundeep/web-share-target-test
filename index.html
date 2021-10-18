@@ -14,11 +14,14 @@
             navigator.serviceWorker.register('./sw.js');
         };
 
-        window.addEventListener('DOMContentLoaded', () => {
-            const parsedUrl = new URL(window.location);
-            alert(parsedUrl.searchParams.get('url'))
-            console.log('URL shared: ' + parsedUrl.searchParams.get('url'));
-        });
+    function onLoad() {
+      var parsedUrl = new URL(window.location.toString());
+      console.log('Title shared: ' + parsedUrl.searchParams.get('name'));
+      console.log('Text shared: ' + parsedUrl.searchParams.get('description'));
+      console.log('URL shared: ' + parsedUrl.searchParams.get('link'));
+    }
+
+    window.addEventListener('load', onLoad);
     </script>
 </body>
 </html>
