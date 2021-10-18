@@ -17,9 +17,9 @@
     function onLoad() {
       var parsedUrl = new URL(window.location.toString());
         let i = document.querySelector("body");
-      i.innerHTML+='Title shared: ' + parsedUrl.searchParams.get('name'));
-      i.innerHTML+='Text shared: ' + parsedUrl.searchParams.get('description'));
-      i.innerHTML+='URL shared: ' + parsedUrl.searchParams.get('link'));
+      i.innerHTML+='Title shared: ' + parsedUrl.searchParams.get('name');
+      i.innerHTML+='Text shared: ' + parsedUrl.searchParams.get('description');
+      i.innerHTML+='URL shared: ' + parsedUrl.searchParams.get('link');
     }
 
     window.addEventListener('load', onLoad);
