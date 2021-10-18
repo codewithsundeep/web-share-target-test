@@ -29,7 +29,12 @@
         }
     ],
     "share_target": {
-        "action": "./",
-        "method": "GET"
-    }
+  "action": "/share-target/",
+  "method": "GET",
+  "params": {
+    "title": "title",
+    "text": "text",
+    "url": "url"
+  }
+}
 }
